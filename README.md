@@ -39,5 +39,8 @@ learning and praticing with java springboot
                 (ps: add <version> tag in the next line to choose the version you want to use)
                 (    it also can be other tags such as <optional> and <scope> depends on the dependency)
 
-        
+    5: CORS
+        $CorsConfiguration.java file shows the global cors configuration mthod.
+            (there are also many other way to set up cors accordingly at Spring Boot cors document:)
+            ("https://spring.io/guides/gs/rest-service-cors#global-cors-configuration")
 

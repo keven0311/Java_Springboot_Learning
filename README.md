@@ -17,21 +17,21 @@ learning and praticing with java springboot
         $           after connected to the cluster, create a new database.
                         (the database can hold different series of models in it)
                         (for example: MY_MOVIES_PROJECT_DATABASE can have MOVIES model and REVIEW model in it.)
-        
+
     2：initialize Spring Boot project:
         $navigate to https://start.spring.io/ to create a new spring boot project.
 
         $   download the zipped jar file after configs selected.
-        
-        $       move the zipped jar file into the target folder in my WSL system, 
+
+        $       move the zipped jar file into the target folder in my WSL system,
                 and run `unzip FILE_NAME.zip` to unzip it.
-    
+
     3: database configuration:
         $config the database in "application.properties" file under "resources" folder.
-    
+
     4: install dependencies to the project:
         $open the "pom.xml" file under root dirctory.
-        
+
         $   under <dependencies> section, add new <dependency> section
 
         $       fullfill the <groupId> and <artifactId> with the depency you want to install
@@ -44,3 +44,7 @@ learning and praticing with java springboot
             (there are also many other way to set up cors accordingly at Spring Boot cors document:)
             ("https://spring.io/guides/gs/rest-service-cors#global-cors-configuration")
 
+    6: build .jar package with maven:
+        $run mvn clean package to build .jar package under target folder.
+        (when deploied: use "scp LOCAL_FILE.jar user@remote_host:/path/to/destination/" to copy the file to remote enviroment,)
+        (and run the .jar file with "java -jar your-project-name-1.0-SNAPSHOT.jar" command.)
